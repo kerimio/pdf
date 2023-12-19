@@ -1,0 +1,13 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" formControlName="name">
+  
+    <label for="birthdate">Geburtsdatum:</label>
+    <input type="text" id="birthdate" formControlName="birthdate">
+    
+    <!-- Verstecktes Formularfeld für pdfSrc -->
+    <input type="hidden" formControlName="pdfSrc">
+    
+    <button type="submit">Absenden</button>
+  </form>
+  
